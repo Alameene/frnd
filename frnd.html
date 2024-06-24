@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Message for Friends</title>
+    <link rel="stylesheet" href="frnd.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="form-container">
+            <h1>Enter Your Name</h1>
+            <form id="details-form">
+                <label for="friend-name">Your Name:</label>
+                <input type="text" id="friend-name" name="friend-name" required>
+                <button type="submit">Proceed</button><br><br>
+                <a href="" class="back">Go back</a>
+            </form>
+        </div>
+        
+        <div class="card" id="card" style="display: none;">
+            <h1>Special Message for You!</h1>
+            <p>Dear <span id="user-name"></span>,</p>
+            <p id="message">
+                Today, on my special day, I want to take a moment to thank you for being such an amazing friend.
+                Your friendship means more to me than words can express. I appreciate your support, laughter, and
+                all the wonderful memories we've created together.
+                <br><br>
+                Thank you for being a part of my journey.
+                <br><br>
+                With heartfelt gratitude,
+                <br>
+                Your Name
+            </p>
+           
+            <button onclick="playAudio()">Play Message</button>
+            <audio id="audio" src="message.mp3"></audio>
+        </div>
+    </div>
+    <script src="frnd.js"></script>
+</body>
+</html>
